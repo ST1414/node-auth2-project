@@ -23,6 +23,10 @@ function find() {
   .select("u.user_id", "u.username", "r.role_name")
 }
 
+// findBy; returns an array of objects
+// Accepts an object as a parameter.
+// Calling function must construct a variable, into an object 
+// who's name is the same as the db field (e.g. { username })
 function findBy(filter) {
   /**
     You will need to join two tables.
